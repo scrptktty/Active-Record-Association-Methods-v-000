@@ -15,7 +15,7 @@ class Artist < ActiveRecord::Base
     self.songs.each do |s|
       genres << s.genre
     end
-    genress.uniq.length
+    genres.uniq.length
   end
 
 end # Artist
