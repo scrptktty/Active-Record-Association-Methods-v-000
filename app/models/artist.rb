@@ -11,7 +11,11 @@ class Artist < ActiveRecord::Base
   end
 
   def genre_count
-    binding.pry
-    self.songs
+    genres = []
+    self.songs.each do |s|
+      genres << s.genre
+    end
+    genre.uniq.length
+    
   end
 end
