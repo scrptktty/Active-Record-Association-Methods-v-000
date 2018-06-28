@@ -15,6 +15,6 @@ class Genre < ActiveRecord::Base
     self.artists.each do |g|
       artists << g.name
     end
-    arists
+    artists
   end
 end
