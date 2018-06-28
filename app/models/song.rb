@@ -8,7 +8,6 @@ class Song < ActiveRecord::Base
 
   def drake_made_this
     drake = Artist.new(name: "Drake")
-    puts "still working on this one"
     binding.pry
   end
 end
