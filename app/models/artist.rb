@@ -16,6 +16,6 @@ class Artist < ActiveRecord::Base
       genres << s.genre
     end
     genre.uniq.length
-    
+
   end
 end
